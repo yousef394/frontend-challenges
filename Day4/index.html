@@ -22,6 +22,10 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -31,20 +35,64 @@
       }
       .card1 {
         width: 600px;
-        height: 800px;
+        height: 1200px;
         background-color: hsl(30, 54%, 90%);
+        display: flex;
+        justify-content: center;
+      }
+      body {
+        font-family: "Outfit";
       }
       .s-card {
         width: 300px;
         height: 700px;
         background-color: white;
+        padding: 4%;
+      }
+      .omelette {
+        width: 300px;
+        height: auto;
+      }
+      p,
+      ul,
+      ol {
+        font-size: 10px;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Young Serif";
+      }
+      h1 {
+        font-size: larger;
+        padding: 3%;
+      }
+      li {
+        display: fl;
+      }
+      ul,
+      ol {
+        list-style-position: inside;
+      }
+      ol li::marker {
+        color: hsl(14, 45%, 36%);
+      }
+      .ol-items {
+        margin-left: 5%;
+        position: relative;
+        bottom: 12px;
       }
     </style>
   </head>
   <body>
     <div class="card1">
       <div class="s-card">
-        <img src="./assets/images/image-omelette.jpeg" alt="omelette" />
+        <img
+          class="omelette"
+          src="./assets/images/image-omelette.jpeg"
+          alt="omelette"
+        />
         <h1>Simple Omelette Recipe</h1>
         <p>
           An easy and quick dish, perfect for any meal. This classic omelette
@@ -73,29 +121,43 @@
         <h2>Instructions</h2>
         <ol>
           <li>
-            Beat the eggs: In a bowl, beat the eggs with a pinch of salt and
-            pepper until they are well mixed. You can add a tablespoon of water
-            or milk for a fluffier texture.
+            <div class="ol-items">
+              the eggs: In a bowl, beat the eggs with a pinch of salt and pepper
+              until they are well mixed. You can add a tablespoon of water or
+              milk for a fluffier texture.
+            </div>
           </li>
           <li>
-            Heat the pan: Place a non-stick frying pan over medium heat and add
-            butter or oil.
+            <div class="ol-items">
+              Heat the pan: Place a non-stick frying pan over medium heat and
+              add butter or oil.
+            </div>
           </li>
           <li>
-            Cook the omelette: Once the butter is melted and bubbling, pour in
-            the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+            <div class="ol-items">
+              Cook the omelette: Once the butter is melted and bubbling, pour in
+              the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+            </div>
           </li>
           <li>
-            Add fillings (optional): When the eggs begin to set at the edges but
-            are still slightly runny in the middle, sprinkle your chosen
-            fillings over one half of the omelette.
+            <div class="ol-items">
+              Add fillings (optional): When the eggs begin to set at the edges
+              but are still slightly runny in the middle, sprinkle your chosen
+              fillings over one half of the omelette.
+            </div>
           </li>
           <li>
-            Fold and serve: As the omelette continues to cook, carefully lift
-            one edge and fold it over the fillings. Let it cook for another
-            minute, then slide it onto a plate.
+            <div class="ol-items">
+              Fold and serve: As the omelette continues to cook, carefully lift
+              one edge and fold it over the fillings. Let it cook for another
+              minute, then slide it onto a plate.
+            </div>
           </li>
-          <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
+          <li>
+            <div class="ol-items">
+              Enjoy: Serve hot, with additional salt and pepper if needed.
+            </div>
+          </li>
           <hr />
           <h2>Nutrition</h2>
           <p>
